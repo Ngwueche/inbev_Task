@@ -38,10 +38,6 @@ const Cart: React.FC = () => {
                 Clear Cart
               </button>
             </div>
-            {/* <div className='text-sm flex font-bold gap-8 items-start'>
-              <span>Total</span>
-              <span>${0}</span>
-            </div> */}
           </div>
           <div className="flex items-center justify-center ">
             <button className='border border-gray-500 text-white py-2 px-4 rounded transition duration-300 w-1/4 hover:bg-gray-500 hover:text-white font-bold'>Checkout</button>

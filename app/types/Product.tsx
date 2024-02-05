@@ -5,7 +5,6 @@ interface Product {
       description: string;
       thumbnail: string;
       rating: number;
-      quantity: number;
   }
   
   export default Product;

@@ -14,7 +14,7 @@ export default function NavBar() {
   };
 
 
-    const {cartTotalQty} = useCart()
+    const {CartProducts} = useCart()
  
 
   const router = useRouter();
@@ -25,10 +25,19 @@ export default function NavBar() {
         <div className="text-white font-bold text-xl">
           In<span className='text-[#E8C025] italic'>Bev</span>
         </div>
-        <div className="hidden md:flex gap-8 ">
-          <Link href="../cart">
-          <AiOutlineShoppingCart className="text-white text-2xl cursor-pointer "/>
-          </Link>
+        <div className="hidden relative md:flex gap-8 ">
+        <Link href="../cart">
+      <div className="relative">
+        <AiOutlineShoppingCart className="text-white text-2xl cursor-pointer" />
+        {Array.isArray(CartProducts) && CartProducts.length > 0 ? (
+          <p className="text-white text-xl absolute top-0 left-6 flex items-center">
+            <sup className='rounded p-[8px] font-bold bg-red-600 text-white'>
+              {CartProducts.length}
+            </sup>
+          </p>
+        ) : null}
+      </div>
+    </Link>
           
           <Link href="../products">Products</Link>
           <Link href="../">Home</Link>
@@ -37,9 +46,17 @@ export default function NavBar() {
         <div className="flex items-center">
           <div className="mr-4 md:hidden">
           <Link href="../cart">
-          <AiOutlineShoppingCart className="text-white text-2xl cursor-pointer "/>
-            {/* <p className="text-white text-xl absolute top-0 left-6"><sup className='rounded p-[2px] font-bold bg-red-600'>{cartTotalQty}</sup></p> */}
-          </Link>
+      <div className="relative">
+        <AiOutlineShoppingCart className="text-white text-2xl cursor-pointer" />
+        {Array.isArray(CartProducts) && CartProducts.length > 0 ? (
+          <p className="text-white text-xl absolute top-0 left-6 flex items-center">
+            <sup className='rounded p-[8px] font-bold bg-red-600 text-white'>
+              {CartProducts.length}
+            </sup>
+          </p>
+        ) : null}
+      </div>
+    </Link>
             
           </div>
           <div className="md:hidden">

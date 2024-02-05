@@ -41,7 +41,7 @@ const CartItem: React.FC<CartItemProps> = ({ product }) => {
       <div className='justify-self-center'>{product.price.toFixed(2)}</div>
       <div className='justify-self-center'>
         <QuantitySelector 
-        cartProduct={product} 
+        quantity={quantity}
         onIncrease={handleIncrease}
         onDecrease={handleDecrease}
         />
