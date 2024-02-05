@@ -22,7 +22,8 @@ useEffect(()=>{
     const cartItems: any = localStorage.getItem("shopItems");
     const productsInCart: Product[] | null = JSON.parse(cartItems);
     setCartProducts(productsInCart);
-},[CartProducts])
+
+},[])
 
 const handleAddProductToCart = useCallback((product: Product) =>{
     setCartProducts((prev) => {

@@ -28,7 +28,6 @@ export default function NavBar() {
         <div className="hidden md:flex gap-8 ">
           <Link href="../cart">
           <AiOutlineShoppingCart className="text-white text-2xl cursor-pointer "/>
-            {/* <p className="text-white text-xl absolute top-0 left-6"><sup className='rounded p-[2px] font-bold bg-red-600'>{cartTotalQty}</sup></p> */}
           </Link>
           
           <Link href="../products">Products</Link>
