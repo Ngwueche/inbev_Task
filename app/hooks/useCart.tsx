@@ -58,6 +58,8 @@ const handleClearCart = useCallback(()=>{
     localStorage.setItem("shopItems", JSON.stringify(null))
     toast.success("Products cleared from cart"); 
 }, [CartProducts])
+
+
 const value ={
     cartTotalQty,
     CartProducts,
@@ -68,6 +70,7 @@ const value ={
 
 return <CartContext.Provider value = {value} {... props}/>
 }
+
 export const useCart = () => {
     const context = useContext (CartContext);
     if(context == null){

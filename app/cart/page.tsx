@@ -34,14 +34,15 @@ const Cart: React.FC = () => {
           ))}
           <div className='mt-4 flex justify-between'>
             <div className=''>
-              <button onClick={() => { handleClearCart() }} className="bg-transparent border border-gray-500 text-gray-500 py-2 px-4 rounded transition duration-300 hover:bg-gray-500 hover:text-white">
+              <button onClick={() => { handleClearCart() }} className="bg-blue-500 border border-gray-500 text-white font-bold py-2 px-4 rounded transition duration-300 hover:bg-gray-500 hover:text-white">
                 Clear Cart
               </button>
             </div>
+            <div className="flex items-center justify-center ">
+            <button className='border border-gray-500 text-white py-2 px-4 rounded transition duration-300 bg-blue-500 hover:bg-gray-500 hover:text-white font-bold'>Checkout</button>
           </div>
-          <div className="flex items-center justify-center ">
-            <button className='border border-gray-500 text-white py-2 px-4 rounded transition duration-300 w-1/4 hover:bg-gray-500 hover:text-white font-bold'>Checkout</button>
           </div>
+          
         </div>
       )}
     </div>
