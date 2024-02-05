@@ -56,7 +56,7 @@ const handleClearCart = useCallback(()=>{
     setCartProducts(null)
     setCartTotalQty(0)
     localStorage.setItem("shopItems", JSON.stringify(null))
-    toast.success("Product removed from cart"); 
+    toast.success("Products cleared from cart"); 
 }, [CartProducts])
 const value ={
     cartTotalQty,

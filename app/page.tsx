@@ -4,7 +4,7 @@ const Home: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <div className="max-w-md text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Our <span className="text-white font-bold">
+        <h1 className="text-4xl font-bold mb-4">Welcome to <span className="text-white font-bold">
           In<span className='text-[#E8C025] italic'>Bev</span>
         </span> Store</h1>
         <p className="text-gray-300 mb-8">
